@@ -30,12 +30,13 @@
             <option value="Gdansk">Gdańsk</option>
         </select>
 
-        <label for="gender">Zaznacz płeć:</label>
         <fieldset>
-            <input type="radio" name="gender" id="gender" value="Kobieta" />Kobieta
-            <input type="radio" name="gender" id="gender2" value="Mężczyzna" />Mężczyzna
+            <p id="gender-legend">Wybierz płeć:</p>
+            <input type="radio" name="gender" id="female" value="Kobieta" />
+            <label for="female">Kobieta</label>
+            <input type="radio" name="gender" id="male" value="Mężczyzna" />
+            <label for="male">Mężczyzna</label>
         </fieldset>
-
 
         <label for="msg">Wpisz wiadomość:</label>
         <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
