@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>1-formularz-html5</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <form action="https://formspree.io/sebastian@fidura.pl" method="post">
+
+        <label for="name">Imię:</label>
+        <input type="text" id="name" name="name" required placeholder="Wpisz imię..." />
+
+        <label for="surname">Naziwsko:</label>
+        <input type="text" id="surname" name="surname" required placeholder="Wpisz nazwisko..." />
+
+        <label for="email">Mail:</label>
+        <input type="email" id="email" name="email" required placeholder="osoba@domena.pl" />
+
+        <label for="tel">Telefon:</label>
+        <input type="number" id="tel" name="tel" placeholder="Wpisz numer telefonu..." />
+
+        <label for="city">Wybierz miasto:</label>
+        <select id="city" name="city">
+            <option value="Warszawa">Warszawa</option>
+            <option value="Krakow">Kraków</option>
+            <option value="Gdansk">Gdańsk</option>
+        </select>
+
+        <label for="gender">Zaznacz płeć:</label>
+        <fieldset>
+            <input type="radio" name="gender" id="female" value="Kobieta" />Kobieta
+            <input type="radio" name="gender" id="male" value="Mężczyzna" />Mężczyzna
+        </fieldset>
+
+
+        <label for="msg">Wpisz wiadomość:</label>
+        <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+
+        <input type="checkbox" id="agreement" name="agreement" value="value" required />
+        <label for="agreement">Wyrażam zgodę na przetwarzanie danych osobowych</label>
+
+        <button type="submit" name="send" value="send">Wyślij</button>
+
+    </form>
+
+</body>
+
+</html>
